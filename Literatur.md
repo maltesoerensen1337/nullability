@@ -12,3 +12,6 @@ https://icevanila.com/question/which-at-notnull-java-annotation-should-i-use (en
 
 [Why would I use Lombok-Annotation @NonNull?](https://stackoverflow.com/questions/56735134/why-would-i-use-lombok-annotation-nonnull) (StackOverflow)
 
+## kritische Stimmen:
+
+https://blog.jooq.org/2016/11/24/the-java-ecosystems-obsession-with-nonnull-annotations/

@@ -49,3 +49,7 @@ void shouldReturnZeroWhenNull() {
 | org.jetbrains.annotation        | X     | X      | X         | X              |
 | lombok                          | X     | X      | X         | X              |
 | javax.validation.constraints    | X     | X      | X         |                |
+
+## Lukas Eder ist dagegen:
+
+https://blog.jooq.org/2016/11/24/the-java-ecosystems-obsession-with-nonnull-annotations/
