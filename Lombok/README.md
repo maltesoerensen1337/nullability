@@ -1,0 +1,5 @@
+Writing a type annotation such as @NonNull serves several purposes.
+
+- It is documentation: it communicates the method's contract to clients, in a more concise and precise way than Javadoc text.
+- It enables run-time checking -- that is, it guarantees that your program crashes with a useful error message (rather than doing something worse) if a buggy client mis-uses your method. Lombok does this for you, without forcing the programmer to write the run-time check. The referenced example shows the two ways to do this: with a single @NonNull annotation or with an explicit programmer-written check. The "Vanilla Java" version either has a typo (a stray @NonNull) or shows the code after Lombok processes it.
+- It enables compile-time checking. A tool such as the Checker Framework gives a guarantee that the code will not crash at run time. Tools such as NullAway, Error Prone, and FindBugs are heuristic bug-finders that will warn you about some mis-uses of null but do not give you a guarantee.
