@@ -1,10 +1,10 @@
 # Nullability in Java
 
 ## Warum?
-* Eine Sorge wenige 
-* Code wird einfacher 
-** Keine Nullchecks nötig 
-** Keine Tests für Nullchecks 
+* Eine Sorge wenige
+* Code wird einfacher
+  - Keine Nullchecks nötig
+  - Keine Tests für Nullchecks
 
 ```
 int doSomething(MyObject object) { 
