@@ -1,6 +1,6 @@
 import java.util.Optional;
 
-@SuppressWarnings("ConstantConditions")
+@SuppressWarnings({"ConstantConditions", "UnusedReturnValue"})
 public class Example {
 
     public static void main(String... args) {
