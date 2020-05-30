@@ -1,0 +1,1 @@
+Benötigt Build Breaker Plugin im Sonarqube Server

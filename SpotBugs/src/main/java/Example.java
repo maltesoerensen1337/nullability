@@ -1,15 +1,15 @@
-import edu.umd.cs.findbugs.annotations.NonNull;
+import javax.annotation.Nonnull;
 
 @SuppressWarnings({"ConstantConditions", "UnusedReturnValue"})
 public class Example {
 
     public static void main(String... args) {
 
-        businessFunctionWithNonNullParam(null); // Fehler richtig erkannt
+//        businessFunctionWithNonNullParam(null); // Fehler richtig erkannt
 
-        businessFunctionWithNullCheck(null); // Richtigerweise kein Fehler erkannt
+//        businessFunctionWithNullCheck(null); // Richtigerweise kein Fehler erkannt
 
-        businessFunctionWithNullCheckAndAnnotation(null); // Fälschlicherweise kein Fehler erkannt
+//        businessFunctionWithNullCheckAndAnnotation(null); // Fälschlicherweise kein Fehler erkannt
     }
 
     public static int businessFunctionWithNullCheck(Object object) {
@@ -21,7 +21,7 @@ public class Example {
         return object.hashCode();
     }
 
-    public static int businessFunctionWithNullCheckAndAnnotation(@NonNull Object object) {
+    public static int businessFunctionWithNullCheckAndAnnotation(@Nonnull Object object) {
         if(object == null) return -1;
         return object.hashCode();
     }

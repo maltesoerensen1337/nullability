@@ -1,0 +1,25 @@
+plugins {
+    id "org.sonarqube" version "2.7"
+}
+
+project(":sonarqube") {
+    sonarqube {
+        properties {
+            property "sonar.projectKey", "nullabillity"
+            property "sonar.host.url", "http://localhost:9000"
+            property "sonar.login", "2accd4bdd5cff64347cb180c79662922a3fb78a1"
+        }
+    }
+}
+
+project(":SpotBugs") {
+    sonarqube {
+        skipProject = true
+    }
+}
+
+project(":java-optional") {
+    sonarqube {
+        skipProject = true
+    }
+}
