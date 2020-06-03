@@ -1,4 +1,5 @@
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class Example {
 
@@ -13,13 +14,13 @@ public class Example {
         return object.hashCode();
     }
 
-    public static int businessFunctionWithNullCheckAndAnnotation(@Nonnull Object object) {
+    public static int businessFunctionWithNullCheckAndAnnotation(@NotNull Object object) {
         //Null erzeugt keine NPE, aber der Parameter ist dennoch mit @NonNull annotiert. Muss erkannt werden.
         if (object == null) return -1;
         return object.hashCode();
     }
 
-    @Nonnull
+    @NotNull
     public static Object getNull() {
         //Rückgabe ist mit @NonNull annotiert, Methode darf nicht null zurückgeben. Muss erkannt werden.
         return randomNullOrYolo();
